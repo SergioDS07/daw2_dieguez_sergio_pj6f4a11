@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>New order - EuroCulture Order Manager</title><link rel="stylesheet" href="css/style.css"></head>
+<body><main class="container left">
+<h1>Create a new order</h1>
+<form id="orderForm">
+<label for="orderId">Order code</label>
+<input type="text" id="orderId" name="orderId">
+<label for="fullName">Customer full name</label>
+<input type="text" id="fullName" name="fullName">
+<label for="address">Customer address</label>
+<input type="text" id="address" name="address">
+<label for="email">Customer email</label>
+<input type="email" id="email" name="email">
+<label for="phone">Customer phone</label>
+<input type="tel" id="phone" name="phone">
+
+<label>Products (tick to enable quantity)</label>
+<div class="product"><input type="checkbox" id="chk_P001" data-code="P001"><label for="chk_P001">Museum Entry Ticket - 12.00 €</label><input type="number" id="qty_P001" min="1" value="1" disabled></div>
+<div class="product"><input type="checkbox" id="chk_P002" data-code="P002"><label for="chk_P002">Theatre Play Ticket - 25.50 €</label><input type="number" id="qty_P002" min="1" value="1" disabled></div>
+<div class="product"><input type="checkbox" id="chk_P003" data-code="P003"><label for="chk_P003">Art History Book - 34.90 €</label><input type="number" id="qty_P003" min="1" value="1" disabled></div>
+<div class="product"><input type="checkbox" id="chk_P004" data-code="P004"><label for="chk_P004">Limited Edition Art Poster - 18.00 €</label><input type="number" id="qty_P004" min="1" value="1" disabled></div>
+
+<p class="error" id="message"></p>
+<button type="submit">Send order</button>
+</form>
+<p class="result" id="result"></p>
+<div class="nav-buttons">
+<a class="button" href="menu.html">Back to operations menu</a>
+<a class="button" href="index.html">Back to start</a>
+</div>
+</main><script src="js/newOrder.js"></script></body></html>
