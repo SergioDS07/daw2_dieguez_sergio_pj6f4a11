@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>View one order - EuroCulture Order Manager</title><link rel="stylesheet" href="css/style.css"></head>
+<body><main class="container">
+<h1>View one order</h1>
+<form id="searchForm" action="../server/getOrder.php" method="GET">
+<label for="orderId">Order code</label>
+<input type="text" id="orderId" name="orderId">
+<p class="error" id="message"></p>
+<button type="submit">Search order</button>
+</form>
+<div class="nav-buttons">
+<a class="button" href="viewOrders.html">Back to view orders menu</a>
+<a class="button" href="menu.html">Back to operations menu</a>
+<a class="button" href="index.html">Back to start</a>
+</div>
+</main><script src="js/viewOrder.js"></script></body></html>
